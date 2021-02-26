@@ -1,0 +1,9 @@
+---
+
+- name: install Abricate via conda
+  conda_install:
+    name: "abricate"
+    version: "{{ version }}"
+    executable: "{{ conda_executable }}"
+    channel: "bioconda"
+    environment: "abricate_{{ env_name }}"
